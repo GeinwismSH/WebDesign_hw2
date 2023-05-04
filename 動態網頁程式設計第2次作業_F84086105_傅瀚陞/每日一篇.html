@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>每日一篇</title>
+      <!-- mata element -->
+      <meta name = "keywords" content = "web page, photonics, HTML5, Department of Photonics, DPS, 
+      光電系, 成大光電系, 成大光電科學與工程學系, National Cheng Kung University, NCKU ">
+      <meta name = "description" content = "此為光電系學生傅瀚陞為成大光電系所寫簡陋網站">
+
+
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+      /* media type */
+      @media all{ 
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 12pt;
+                        color: green;}
+         .top_href:hover{ color: white; 
+                           background-color: RoyalBlue; }
+         
+         .top_right_href:hover{  color: white; }
+         .right_href:hover{  color: white; }
+         #comment {width: 50%;
+                  float: right;
+                  text-align: right;
+                  padding: .2em;
+                  margin-right: .5em;
+                  margin-bottom: .5em;}
+         .rhspan  {padding: 2%;
+                  border: 0.15em solid rgb(5, 104, 5);}
+         #background_main{   background-image:url(./背景圖.jpg) ;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         #background_bottom{   background-color: #6b0707;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+                        div
+         #gradient      {  position: relative;
+                           left: 2.5%;
+                           width: 15%;
+                           height: 10%;
+                           padding: 5px; 
+                           text-align: center;
+                           background: -webkit-radial-gradient(center, yellow, rgb(204, 46, 46));
+                           background: -moz-radial-gradient(center, yellow, red);
+                           background: radial-gradient(center, yellow, rgb(192, 43, 43));
+                        }
+         p.para         { margin:1em 1em;
+                           font-family:"標楷體";
+                           font-weight: bolder;
+                        }
+         .multicolumns{padding: 3%;
+                        /* setting the number of columns to 3 */
+                        -webkit-column-count: 3; 
+                        -moz-column-count: 3; 
+                        -o-column-count: 3;
+                        column-count: 3;
+                        /* setting the space between columns to 30px */
+                        -webkit-column-gap: 30px;
+                        -moz-column-gap: 30px; 
+                        -o-column-gap: 30px; 
+                        column-gap: 30px;
+                        /* adding a 1px black line between each column */
+                        -webkit-column-rule: 1px outset black; 
+                        -moz-column-rule: 1px outset black; 
+                        -o-column-rule: 1px outset black; 
+                        column-rule: 1px outset black;
+                     }
+      }
+      </style>
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+      <div>
+      <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+         alt = "系網首頁圖片"> </a>
+      </div>
+
+      <!-- 各項連結 -->
+
+      
+
+      <div id="top_right">
+         <p>
+            <nav  align="right"><!-- nav element -->
+            |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+            |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+            |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+            |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+         </nav>
+         </p>
+      </div>
+
+      <!-- 目錄 -->
+      <div id="top">
+         <table align="center" border = "1">
+            <tr>
+            <td>&emsp;&emsp;<a class="top_href" href="./main.html">各項公告</a>&emsp;&emsp;</td>
+            <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce.html">系所簡介</a>&emsp;&emsp;</td>
+            <td>&emsp;&emsp;<a class="top_href" href="./teachers.html">系所成員</a>&emsp;&emsp;</td>
+            <td>&emsp;&emsp;<a class="top_href" href="./class.html">課程資訊</a>&emsp;&emsp;</td>
+            </tr>
+         </table>
+         <br>
+      </div>
+
+      <hr>
+
+
+
+      <!-- 文章內容 -->
+      <div id="gradient">
+         <h2>
+            光學相干斷層掃描
+         </h2>
+      </div>
+
+      <div class="multicolumns">
+
+         <p class="para">
+            光學相干斷層掃描（Optical coherence tomography，OCT）又稱光學相干層析術、光學同調斷層掃描，是一種獲取與處理光學信號的成像技術，其利用低相干光（如近紅外光）掃描，自光學散射介質（如生物組織）內部拍攝微米級解析度的二維和三維圖像；用於醫學成像和工業無損檢測。
+
+            光學相干斷層掃描技術利用光的干涉原理，通常選取波長較長的近紅外光拍照，可穿過一定深度的掃描介質。另一種類似的技術，共焦顯微技術，穿過樣品的深度不如光學相干斷層掃描。
+            
+            光學相干斷層掃描使用的光源包括超輻射發光二極體與超短脈衝雷射。根據光源性質的不同，這種掃描方式甚至可以達到亞微米級的解析度，這時需要光源的頻譜非常寬，波長的變化範圍在100奈米左右。
+            
+            光學相干斷層掃描技術是光學斷層掃描技術的一種。目前比較先進的一種光學相干斷層掃描技術為頻域光學相干斷層掃描，這種掃描方式的信噪比較高，獲得信號的速度也比較快。商用的光學相干斷層掃描系統有多種應用，包括藝術品保存和診斷設備，尤其是在眼科中，這種斷層掃描系統可以獲取視網膜的細節圖像。最近，這種技術也被用於心臟病學的研究，以對冠狀動脈的疾病進行診斷。
+            
+            在全世界範圍內，有數個研究組織從採用白光干涉對活體內人眼進行測量開始對人體組織，尤其是眼睛的成像進行研究。1990年的 ICO-15 SAT 會議上，首先展示了一張基於白光干涉深度掃描原理的對活體內人眼眼底沿眼水平子午線的二維圖像。1990年，丹野直弘對這個方案進行了進一步的研究，隨後日本山形大學的一位教授也對此展開了研究。這些研究使得光學相干斷層掃描技術擁有了微米級的解析度和毫米級的穿透深度，還擁有產生截面圖像的能力，因此它成為一種重要的生物組織成像技術。1993年，首次採用光學相干斷層掃描技術對活體內的視網膜結構成像。光學相干斷層掃描也被應用於許多藝術品保護的項目中，它被用來分析繪畫作品的不同層次。與其他醫學圖像系統相比，光學相干斷層掃描有很大的優勢。醫用超聲成像和核磁共振成像由於解析度不夠，無法用於形態組織成像，而共焦顯微技術則缺少毫米級的穿透能力。
+
+            光學相干斷層掃描是基於弱相干干涉學理論發展的。在傳統的干涉學中需要使用相干長度很長的光源，因此通常選用雷射作為干涉光源，相干長度通常達到數米。而在光學相干斷層掃描技術中，由於使用了寬帶光源，相干長度被縮短到了幾個微米。寬帶光源通常可以使用超輻射發光二極體或超短脈衝的雷射（飛秒雷射器）來實現。白光也是一種功率較低的寬帶光源。
+
+            光學相干斷層掃描系統中的光束被分成兩部分：一部分稱為樣品光臂，照射在樣品上；一部分被稱為參考光臂，通常照在鏡子上。樣品產生的反射光和參考光臂產生的反射光會發生干涉，而僅僅當兩條光路的長度相同（差距小於相干長度）時，會產生穩定的干涉圖樣。通過調整參考光臂的鏡子，可以得到樣品的反射輪廓，這種技術被稱為時域光學相干斷層掃描。樣品反射能力較強的區域會產生較強的干涉，而超出干涉長度的反射光將不會產生干涉。這樣產生的反射輪廓被稱為A掃描，包含有我們觀察的樣品內部結構的空間大小與位置的信息。截面斷層掃描B掃描可以通過結合不同深度的A掃描結果來重建。根據使用的成像引擎的能力，還可以實現在給定深度上的C掃描
+         </p>
+      </div>
+
+   <div id="background_bottom">
+   <footer><!-- footer element -->
+      <p align="center">
+         <font color="white">
+         本網站著作權屬於國立成功大學 光電科學與工程學系的傅瀚陞同學<br><!-- marker element -->
+         Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+         電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+         郵件地址：70101台南市東區大學路1號　成大光電系<br>
+         系辦公室：成功校區綜合大樓四樓48402室
+         上班時間：<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+         </font>
+      <br>
+      </p>
+   </footer></div>
+
+
+   </body>
+</html>

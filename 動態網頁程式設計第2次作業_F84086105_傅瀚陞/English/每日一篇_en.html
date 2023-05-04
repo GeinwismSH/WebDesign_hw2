@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>每日一篇</title>
+      <!-- mata element -->
+      <meta name = "keywords" content = "web page, photonics, HTML5, Department of Photonics, DPS, 
+      光電系, 成大光電系, 成大光電科學與工程學系, National Cheng Kung University, NCKU ">
+      <meta name = "description" content = "此為光電系學生傅瀚陞為成大光電系所寫簡陋網站">
+
+
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+      /* media type */
+      @media all{ 
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 12pt;
+                        color: green;}
+         .top_href:hover{ color: white; 
+                           background-color: RoyalBlue; }
+         
+         .top_right_href:hover{  color: white; }
+         .right_href:hover{  color: white; }
+         #comment {width: 50%;
+                  float: right;
+                  text-align: right;
+                  padding: .2em;
+                  margin-right: .5em;
+                  margin-bottom: .5em;}
+         .rhspan  {padding: 2%;
+                  border: 0.15em solid rgb(5, 104, 5);}
+         #background_main{   background-image:url(../背景圖.jpg) ;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         #background_bottom{   background-color: #6b0707;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+                        div
+         #gradient      {  position: relative;
+                           left: 2.5%;
+                           width: 15%;
+                           height: 10%;
+                           padding: 5px; 
+                           text-align: center;
+                           background: -webkit-radial-gradient(center, yellow, rgb(204, 46, 46));
+                           background: -moz-radial-gradient(center, yellow, red);
+                           background: radial-gradient(center, yellow, rgb(192, 43, 43));
+                        }
+         p.para         { margin:1em 1em;
+                           font-family:"times new roman";
+                           font-weight: bolder;
+                        }
+         .multicolumns{padding: 3%;
+                        /* setting the number of columns to 3 */
+                        -webkit-column-count: 3; 
+                        -moz-column-count: 3; 
+                        -o-column-count: 3;
+                        column-count: 3;
+                        /* setting the space between columns to 30px */
+                        -webkit-column-gap: 30px;
+                        -moz-column-gap: 30px; 
+                        -o-column-gap: 30px; 
+                        column-gap: 30px;
+                        /* adding a 1px black line between each column */
+                        -webkit-column-rule: 1px outset black; 
+                        -moz-column-rule: 1px outset black; 
+                        -o-column-rule: 1px outset black; 
+                        column-rule: 1px outset black;
+                     }
+      }
+      </style>
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main_en.html"><img src = "./DPS_En_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main_en.html">Home</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">NCKU</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap_en.html">Site map</a>&emsp;
+               |&emsp;<a class="top_right_href" href="../main.html">中文</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main_en.html">News</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce_en.html">Introduction</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers_en.html">Faculty</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class_en.html">Curriculum</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+   
+         <hr>
+         <!-- 新增功能：意見箱 -->
+         <div>
+            <p id="comment">
+               <span class="rhspan"><a class="right_href" href="./每日一篇_en.html">Daily article</a></span>
+               <span class="rhspan"><a class="right_href" href="./Comment_en.html">Suggestion box</a></span>
+               <span class="rhspan"><a class="right_href" href="./黑名單_en.html">Blacklist</a></span>
+               <span class="rhspan"><a class="right_href" href="./群魔亂舞_en.html">Demons dancing</a></span>
+               
+            </p>
+         <div>
+
+
+
+      <!-- 文章內容 -->
+      <div id="gradient">
+         <h2>
+            Optical Coherence Tomography
+         </h2>
+      </div>
+
+      <div class="multicolumns">
+
+         <p class="para">
+            Optical coherence tomography (Optical coherence tomography, OCT), also known as optical coherence tomography, optical coherence tomography, is an imaging technology that acquires and processes optical signals.  Take micron-resolution 2D and 3D images of the interior of scattering media such as biological tissue; used in medical imaging and industrial non-destructive testing.
+            Optical coherence tomography uses the interference principle of light, and usually selects near-infrared light with a longer wavelength to take pictures, which can pass through a certain depth of scanning medium.  Another similar technique, confocal microscopy, does not travel as deeply through the sample as optical coherence tomography.
+                        Light sources used in optical coherence tomography include superluminescent light-emitting diodes and ultrashort pulse lasers.  Depending on the nature of the light source, this scanning method can even achieve sub-micron resolution. At this time, the spectrum of the light source is required to be very wide, and the wavelength range is about 100 nanometers.
+                        Optical coherence tomography is a type of optical tomography.  At present, a relatively advanced optical coherence tomography technology is frequency-domain optical coherence tomography. This scanning method has a high signal-to-noise ratio and a relatively fast signal acquisition speed.  Commercially available optical coherence tomography systems have a variety of applications, including art preservation and diagnostic equipment, especially in ophthalmology, where they can obtain detailed images of the retina.  Recently, this technique has also been used in cardiology research to diagnose coronary artery disease.
+                        Throughout the world, several research organizations have studied the imaging of human tissue, especially the eye, starting with measurements of the human eye in vivo using white light interferometry.  At the ICO-15 SAT conference in 1990, a two-dimensional image of the human eye fundus in vivo along the eye-level meridian was first shown based on the principle of white light interference depth scanning.  In 1990, Tanno Naohiro conducted further research on this scheme, and then a professor at Yamagata University in Japan also conducted research on it.  These researches have enabled optical coherence tomography to have micron-level resolution and millimeter-level penetration depth, as well as the ability to generate cross-sectional images, so it has become an important biological tissue imaging technology.  In 1993, optical coherence tomography was used to image retinal structures in vivo for the first time.  Optical coherence tomography is also used in many art conservation projects, where it is used to analyze different layers of paintings.  Optical coherence tomography has significant advantages over other medical imaging systems.  Medical ultrasound imaging and magnetic resonance imaging cannot be used for morphological tissue imaging due to insufficient resolution, while confocal microscopy technology lacks millimeter-level penetration capabilities.
+            Optical coherence tomography is developed based on the theory of weak coherence interferometry.  In traditional interferology, it is necessary to use a light source with a long coherence length, so lasers are usually used as the interference light source, and the coherence length usually reaches several meters.  In optical coherence tomography, the coherence length is shortened to a few micrometers due to the use of a broadband light source.  Broadband light sources can often be realized using superluminescent diodes or ultrashort-pulse lasers (femtosecond lasers).  White light is also a lower power broadband light source.
+            The beam in an optical coherence tomography system is divided into two parts: one part, called the sample beam, shines on the sample; the other, called the reference beam, usually shines on a mirror.  The reflected light generated by the sample and the reflected light generated by the reference optical arm will interfere, and only when the lengths of the two optical paths are the same (the difference is less than the coherence length), a stable interference pattern will be generated.  By adjusting the mirror of the reference arm, the reflection profile of the sample can be obtained, a technique called time-domain optical coherence tomography.  Areas of the sample that are more reflective will produce stronger interference, while reflected light beyond the interference length will not interfere.  The resulting reflection profile is called an A-scan and contains information about the spatial size and location of the internal structure of the sample we are observing.  Cross-sectional tomographic B-scans can be reconstructed by combining A-scans at different depths.  Depending on the capabilities of the imaging engine used, C-scans at a given depth can also be achieved
+         </p>
+      </div>
+
+      <br>
+      <div id="background_bottom">
+      <footer> 
+         <br>
+         <p align="center">
+            <font color="white">
+               Copyright @2023 Han_Sheng Fu Dept. of Photonics, NCKU. all rights reserved.<br>
+               Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+               Tel：+886-6-2757575 ext.　Fax：+886-6-2095040<br>
+               Build. Location：Complex building in Cheng-Kung Campus<br>
+               Mail Add.：Dept. of Photonics, Ncku<br>
+   　　　　　   No.1, University Road, Tainan City 701, Taiwan (R.O.C)
+               Working hours:<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+            </font>
+            <br>
+            </p>
+         </footer>
+      </div>
+
+
+   </body>
+</html>

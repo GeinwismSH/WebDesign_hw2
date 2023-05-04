@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>搞鬼</title>
+      <!-- mata element -->
+      <meta name = "keywords" content = "web page, photonics, HTML5, Department of Photonics, DPS, 
+      光電系, 成大光電系, 成大光電科學與工程學系, National Cheng Kung University, NCKU ">
+      <meta name = "description" content = "此為光電系學生傅瀚陞為成大光電系所寫簡陋網站">
+
+
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 12pt;
+                        color: green;}
+         .top_href:hover{ color: red; }
+         .top_right_href:hover{  color: red; }
+         .right_href:hover{  color: red; }
+         #comment {width: 50%;
+                  float: right;
+                  text-align: right;
+                  padding: .2em;
+                  margin-right: .5em;
+                  margin-bottom: .5em;}
+         .rhspan  {padding: 2%;
+                  border: 0.15em solid rgb(5, 104, 5);}
+         #background_main{   background-image:url(./背景圖.jpg) ;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         #background_bottom{   background-color: #6b0707;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         #blank  {height: 200%;}
+         #shadow  {text-shadow:-3px 6px 3px darkgoldenrod;}
+         #gradient   {        width: 20%;
+                              
+                              position: relative;
+                              left: 40%;
+                              border: 5px groove yellow;
+                              padding: 5px 20px; 
+                              text-align: center;
+                              background: -webkit-gradient(
+                                 linear, center top, center bottom,
+                                 color-stop(15%, rgb(219, 187, 6)), color-stop(50%, rgb(230, 230, 230)),
+                                 color-stop(75%, rgb(241, 255, 41)) );
+                              background: -moz-linear-gradient(
+                                 top center, white 15%, lightsteelblue 50%, navy 75% );
+                              background: linear-gradient(
+                                 top, White 15%, lightsteelblue 50%, navy 75% );}
+         #repeat { 
+                        border: 30px solid transparent;
+                        padding: 15px;
+                        border-image: url(./DPS徽章.jpg) 37% 37% round;
+                        }
+
+         /* 菱形移動*/
+         #image1
+         {
+            position: relative;
+            left: 40%;
+            animation: movingimage linear 10s 1s infinite alternate;
+         }
+         @keyframes movingimage
+         {
+            0%   {opacity: 1; left: 500px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 250px;}
+            50%  {opacity: 0; left: 500px; top: 400px;}
+            75%  {opacity: 1; left: 1200px; top: 250px;}
+            100% {opacity: 1; left: 500px; top: 0px;}
+         }
+         /* skew */
+         #image2
+         {
+            margin-left: 75px;
+
+            height: 100px;
+            width: 200px;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 250%;
+
+            border-radius:15px;
+
+            animation: skew 3s infinite linear;
+         }
+         @keyframes skew 
+         {
+            from { transform: skewX(0deg); }
+            25% { transform: skewX(45deg); }
+            50% { transform: skewX(0); }
+            75% { transform: skewX(-45deg); }
+            to { transform: skewX(0); }
+         }
+
+         #image3
+         {
+            position: relative;
+            left: 40%;
+            animation: happy linear 10s 1s infinite alternate;
+         }
+         @keyframes happy
+         {
+            0%   {opacity: 1; left: 0px; top: 50px;transform: skewX(0deg);}
+            25%  {opacity: 1; left: 570px; top: -100px;transform: skewX(90deg);}
+            50%  {opacity: 1; left: 600px; top: 100px; transform: skewX(0);}
+            75%  {opacity: 1; left: 1200px; top: 50px;transform: skewX(-90deg);}
+            100% {opacity: 1; left: 100px; top: 150px;transform: skewX(0);}
+         }
+         #image4
+         {
+            position: relative;
+            left: 10%;
+            animation: god linear 10s 1s infinite alternate;
+         }
+         @keyframes god
+         {
+            0%   {opacity: 1; left: 200px; top: -550px;transform: rotate(360deg) scale(2,2);}
+            25%  {opacity: 1; left: 570px; top: -400px;transform: rotate(180deg) scale(3,3);}
+            50%  {opacity: 1; left: 0px; top: -200px; transform: rotate(0) scale(1,1);}
+            75%  {opacity: 1; left: 400px; top: 50px;transform: rotate(-180deg) scale(2,1);}
+            100% {opacity: 1; left: 700px; top: -350px;transform: rotate(-360deg) scale(1,2);}
+         }
+         #image5, #image6
+         {
+            position: absolute;
+            left: 60%;
+            top: 120%;
+            -webkit-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+         }
+         #image6:hover 
+            { opacity:0; }
+            
+      </style>
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+      <div>
+      <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+         alt = "系網首頁圖片"> </a>
+      </div>
+
+      <!-- 各項連結 -->
+
+      
+
+      <div id="top_right">
+         <p>
+            <nav  align="right"><!-- nav element -->
+            |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+            |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+            |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+            |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+         </nav>
+         </p>
+      </div>
+
+      <!-- 目錄 -->
+      <div id="top">
+         <table align="center" border = "1">
+            <tr>
+            <td>&emsp;&emsp;<a class="top_href" href="./main.html">各項公告</a>&emsp;&emsp;</td>
+            <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce.html">系所簡介</a>&emsp;&emsp;</td>
+            <td>&emsp;&emsp;<a class="top_href" href="./teachers.html">系所成員</a>&emsp;&emsp;</td>
+            <td>&emsp;&emsp;<a class="top_href" href="./class.html">課程資訊</a>&emsp;&emsp;</td>
+            </tr>
+         </table>
+         <br>
+      </div>
+
+      <hr>
+      <!-- 新增功能：意見箱 -->
+      <div>
+         <p id="comment">
+            <span class="rhspan"><a class="right_href" href="./Comment.html">意見箱</a></span>
+            <span class="rhspan"><a class="right_href" href="./黑名單.html">黑名單</a></span>
+            <span class="rhspan"><a class="right_href" href="./群魔亂舞.html">群魔亂舞</a></span>
+         </p>
+      <div>
+
+
+      <!-- 鬥技場 -->
+      <div id="gradient">
+         <h1 id="shadow">鬥技場</h1>
+      </div>
+
+      <div id = "repeat">
+            <div class="pic">
+               <img id="image1" src="./賴韋志.jpg" alt="賴偉志" width=10%>
+            </div>
+            <div class="pic">
+               <img id="image2" src="./郭宗枋.jpg" alt="郭宗枋" width=10%>
+            </div>
+            <div class="pic">
+               <img id="image3" src="./黃勝廣.jpg" alt="黃勝廣" width=10%>
+            </div>
+            <div class="pic">
+               <img id="image4" src="./張世慧.jpg" alt="張世慧" width=10%>
+            </div>
+            
+            <img id="image5" src="./無慈悲的維揚.jpg" alt="無慈悲的維揚" width=10% height="22%">
+            <img id="image6" src="./周維揚.jpg" alt="周維揚" width=10% height="22%">
+            
+      </div>
+   <div id="background_bottom">
+   <footer><!-- footer element -->
+      <p align="center">
+         <font color="white">
+         本網站著作權屬於國立成功大學 光電科學與工程學系的傅瀚陞同學<br><!-- marker element -->
+         Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+         電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+         郵件地址：70101台南市東區大學路1號　成大光電系<br>
+         系辦公室：成功校區綜合大樓四樓48402室
+         上班時間：<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+         </font>
+      <br>
+      </p>
+   </footer></div>
+
+
+   </body>
+</html>

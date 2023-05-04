@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>光電系兼任師資</title>
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+         /* media type */
+         @media all{ 
+            a        {  text-decoration:none;}
+            .top_href   {  font-weight: bolder;
+                           font-size: 20pt;}
+            .top_right_href   {font-size: 12pt;
+                              color: purple;}
+            .right_href {font-size: 12pt;
+                           color: green;}
+            .top_href:hover{ color: white; 
+                              background-color: RoyalBlue; }
+            
+            .top_right_href:hover{  color: white; }
+            .right_href:hover{  color: white; }
+            #comment {width: 50%;
+                     float: right;
+                     text-align: right;
+                     padding: .2em;
+                     margin-right: .5em;
+                     margin-bottom: .5em;}
+            .rhspan  {padding: 2%;
+                     border: 0.15em solid rgb(5, 104, 5);}
+            #background_main{   background-image:url(./背景圖.jpg) ;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+            #background_bottom{   background-color: #6b0707;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+         }
+         </style>
+   </head>
+
+   <body>
+
+
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+   
+         
+   
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+               |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main.html">各項公告</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce.html">系所簡介</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers.html">系所成員</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class.html">課程資訊</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+   
+         <hr>
+
+      <!-- 教授列表 -->
+
+      <table align="center" border = "1">
+         <thead><!-- thead element -->
+            <tr>
+               <th>教授照片</th><!-- th element -->
+               <th>相關資訊</th>
+            </tr>
+         </thead>
+
+         <tbody><!-- tbody element -->
+            <tr>
+            <td><img src = "./邱爾德.jpg" 
+               alt = "邱爾德教授圖片"></td>
+            <td>邱爾德 (兼任教授) Chiou, Er-Terg --陽明生醫光電所
+               <ul>
+                  <li>電話：02-28237141</li>
+                  <li>辦公室：陽明生醫光電所</li>
+                  <li>E-mail：aechiou@ym.edu.tw</li>
+                  <li>專長領域：生物光子學、奈米生物光子學</li>
+                  <li>事蹟：台灣傅氏光學第一人、跟過諾貝爾獎教授、打過二戰</li>
+               </ul>
+
+            </td>
+            </tr>
+
+            <tr>
+               <td><img src = "./李清庭.jpg" 
+                  alt = "李清庭教授圖片"></td>
+               <td>李清庭 (兼任教授) Lee, Ching-Ting --電機系
+                  <ul>
+                     <li>E-mail：ctlee@ee.ncku.edu.tw</li>
+                     <li>專長領域：光電半導體元件與系統</li>
+                  </ul>
+      
+               </td>
+               </tr>
+         </tbody>
+
+         <tfoot><!-- tfoot element -->
+            <tr>
+               <td><aside align="center">照片為本人</aside></td><!-- aside element -->
+               <td><aside align="center">教授資訊有些許杜撰</aside></td>
+            </tr>
+         </tfoot>
+      </table>
+      
+
+      <div id="background_bottom">
+         <footer><!-- footer element -->
+            <p align="center">
+               <font color="white">
+               本網站著作權屬於國立成功大學 光電科學與工程學系的傅瀚陞同學<br><!-- marker element -->
+               Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+               電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+               郵件地址：70101台南市東區大學路1號　成大光電系<br>
+               系辦公室：成功校區綜合大樓四樓48402室
+               上班時間：<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+               </font>
+            <br>
+            </p>
+         </footer></div>
+
+   </body>
+</html>

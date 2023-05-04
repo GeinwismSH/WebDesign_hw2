@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>光電系意見箱</title>
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+         /* media type */
+         @media all{ 
+            a        {  text-decoration:none;}
+            .top_href   {  font-weight: bolder;
+                           font-size: 20pt;}
+            .top_right_href   {font-size: 12pt;
+                              color: purple;}
+            .right_href {font-size: 12pt;
+                           color: green;}
+            .top_href:hover{ color: white; 
+                              background-color: RoyalBlue; }
+            
+            .top_right_href:hover{  color: white; }
+            .right_href:hover{  color: white; }
+            #comment {width: 50%;
+                     float: right;
+                     text-align: right;
+                     padding: .2em;
+                     margin-right: .5em;
+                     margin-bottom: .5em;}
+            .rhspan  {padding: 2%;
+                     border: 0.15em solid rgb(5, 104, 5);}
+            #background_main{   background-image:url(./背景圖.jpg) ;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+            #background_bottom{   background-color: #6b0707;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+            h1{            border: 3px solid navy;
+                           padding: 5px 20px; 
+                           background: lightcyan;
+                           width: 200px;
+                           text-align: center;
+                           border-radius: 15px; /* adding rounded corners */
+                           margin-bottom: 20px;
+                           box-shadow: 10px 10px 10px dimgray;}
+         }
+         </style>
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+   
+         
+   
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+               |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main.html">各項公告</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce.html">系所簡介</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers.html">系所成員</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class.html">課程資訊</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+   
+         <hr>
+         <!-- 新增功能：意見箱 -->
+         <div>
+            <p id="comment">
+               <span class="rhspan"><a class="right_href" href="./Comment.html">意見箱</a></span>
+               <span class="rhspan"><a class="right_href" href="./黑名單.html">黑名單</a></span>
+               <span class="rhspan"><a class="right_href" href="./群魔亂舞.html">群魔亂舞</a></span>
+               
+            </p>
+         <div>
+
+
+      <!-- form element意見箱表單 -->
+
+      <h1>意見箱</h1>
+      <p>可以陳述您對本系的任何意見，送出即返回主頁。</p>
+
+      <form method = "post" action = "./main.html" >
+
+         <!-- select element -->
+         <p>
+            <label><strong>類別：</strong><br>
+               <select name = "Question">
+                  <option selected>課程相關</option>
+                  <option>環境相關</option>
+                  <option>設備相關</option>
+                  <option>行政相關</option>
+                  <option>升學相關</option>
+                  <option>轉系相關</option>
+                  <option>其他</option>
+               </select>
+            </label> 
+         </p> 
+
+         <!-- datalist element -->
+         <p>
+            <label><strong>身分別：</strong><br>
+               <input type="text" placeholder="選身分別" list="identity"/>
+               <datalist id = "identity">
+                  <option value="教師" ></option>
+                  <option value="行政人員"></option>
+                  <option value="學士生"></option>
+                  <option value="碩士生"></option>
+                  <option value="博士生"></option>
+                  <option value="校內其餘人士"></option>
+                  <option value="校外人士"></option>
+               </datalist>
+            </label> 
+         </p> 
+
+         <p>
+            <label>
+            <strong>建議：</strong><br>
+            <textarea name = "comments"
+               rows = "6" cols = "44">輸入你的建議</textarea>
+            </label>
+         </p>          
+
+
+         <!--單選-->
+         <p>
+            <strong>資料：</strong><br>
+
+            <label>
+               <input name = "commentbox" type = "radio"
+                  value = "anonymous" checked>匿名</label>
+      
+            <label>
+               <input name = "commentbox" type = "radio" 
+                  value = "name">輸入姓名(非學生)</label> 
+               <input name = "name" type = "text"  size = "9">
+
+            <label>
+               <input name = "commentbox" type = "radio" 
+                  value = "id">輸入學號(學生)</label> 
+               <input name = "school_id" type = "password"  size = "9">
+
+
+
+         </p>
+
+         <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+
+
+   <div>
+      <br><br>
+      <hr>
+      <p align="center">
+         <font color="#FF0000">
+         本網站著作權屬於國立成功大學 光電科學與工程學系的<em><b>傅瀚陞同學</b></em><br>
+         電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+         郵件地址：70101台南市東區大學路1號　成大光電系<br>
+         系辦公室：成功校區綜合大樓四樓48402室
+         </font>
+      <br>
+      </p>
+   <div>
+
+   </body>
+</html>

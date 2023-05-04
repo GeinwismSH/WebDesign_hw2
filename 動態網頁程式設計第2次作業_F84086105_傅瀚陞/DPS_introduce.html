@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>光電系所介紹</title>
+
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 14pt;
+                        color: green;}
+         .top_href:hover{ color: red; }
+         .top_right_href:hover{  color: red; }
+         .right_href:hover{  color: red; }
+         #background_main{   background-image:url(./背景圖.jpg) ;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         #background_bottom{   background-color: #6b0707;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         h1{            border: 3px solid rgba(44, 6, 94, 0.877);
+                        padding: 5px 20px; 
+                        background: rgba(174, 248, 248, 0.979);
+                        width: 200px;
+                        text-align: center;
+                        border-radius: 15px; 
+                        margin-bottom: 20px;
+                        box-shadow: 10px 10px 10px dimgray;}
+                        .flexbox 
+         {
+            width: 900px;
+            height: 600px;
+            display: -webkit-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+         }
+         /* flexbox */
+         .flexbox > div 
+         {
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 200px;
+            margin: 10px -10px 10px 0px;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+         }
+         .flexbox > div:nth-child(1){ background-color: rgb(216, 215, 215); }
+         .flexbox > div:nth-child(2){ background-color: rgb(216, 215, 215); }
+         .flexbox > div:nth-child(3){ background-color: rgb(216, 215, 215); }
+         .flexbox > div:nth-child(4){ background-color: rgb(216, 215, 215); }
+
+
+         .flexbox > div:hover { 
+            width: 300px; color: white; font-weight: bold; }
+         .flexbox > div:nth-child(1):hover { background-color: rgb(5, 199, 47); }
+         .flexbox > div:nth-child(2):hover { background-color: crimson; }
+         .flexbox > div:nth-child(3):hover { background-color: rgb(219, 8, 166); }
+         .flexbox > div:nth-child(4):hover { background-color: rgb(85, 2, 240); }
+
+         .box {  height:450px ;overflow: hidden; font-family: "Rosario" }
+      </style>      
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+   
+         
+   
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+               |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main.html">各項公告</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce.html">系所簡介</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers.html">系所成員</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class.html">課程資訊</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+
+
+      <!-- 系所介紹內容 -->
+      <div>
+         
+      <header><!-- header element -->
+         <h1>系所簡介</h1>
+      </header>
+
+      <div class = "flexbox">
+         <div><p class="box">
+         <b>系所沿革</b><br><br>
+         
+         光電科技是一門前瞻的尖端跨領域的整合科技，有紮實的科技素養，方能有無限的創新研發能力與無窮的創造發展空間。
+         在當前產業界對光電人才需求孔急之時，培養具備紮實的光電科技基礎，對於相關光電產業的發展，有急迫的必要性。
+         在我國於世界的光電領域具有領先地位的情況下，加上南部科學園區規劃為光電研發重鎮之時，
+         促使國內在光電領域的學術研發及產業蓬勃發展。為因應優秀的光電人才之大量需求。
+         於民國91年8月理學院成立"光電科學與工程研究所"碩士班、93年8月成立博士班，並於民國96年8月電機資訊學院成立"光電工程學系"，
+         招收大學部學生。為學術一貫，於100學年度系所合併為"光電科學與工程學系"，共同肩負光電人才的培育工作。
+
+         </p>
+         </div>      
+         
+      
+         <div><p class="box">
+         <b>系所目標</b><br><br>
+         
+         本系的整體目標在培育光電人才，重點係以基礎及整合教育為主軸，使畢業生有良好之學術與技術背景，以從事前瞻性的學術研究及產業科技研發，亦有能力配合電子、資訊及通訊產業之發展。具體的教學與研究重點將著重在基礎光電及前瞻的光電科技課程，例如：奈米光學、太陽能光電、光學設計、光電信號處理、光電材料、元件模組、系統及光資訊儲存、光電通訊及平面顯示器等相關之應用。其最大特色是上、中及下游整合，兼顧產業應用與學術前瞻性。由於成功大學相關系所在光學設計、光電信號處理、雷射及光電基礎研究、光電材料與元件、寬頻光纖通訊系統、光儲存及平面顯示科技及微光機電資訊系統方面都已經建立相當傑出的研究基礎；因此未來本系在成功大學相關系所的互相整合之下，將具有達成卓越目標的獨特優勢，達到世界一流的水準。<br>
+         <br></p>
+         </div>
+      
+
+      
+         <div><p class="box">
+         <b>發展計畫</b><br><br>
+         
+         研究與發展重點如下：<br>
+         1.光電科學：雷射原理與應用、數值方法、材料光學、波導光學、光電數值模擬、光學系統設計、太陽能光電化學..等<br>
+         2.資訊與顯示光電：電路學、顯示器光學、顯示器色彩學、液晶光電與應用、傅氏光學、訊號與系統、光纖通訊…等<br>
+         3.奈米與綠能光電：材料科學、半導體元件製作技術、光電量測技術、光電材料物理、固態物理、有機光電材料與元件…等<br>
+         4.生醫光電：生醫光電導論、顯微術、生醫光譜學原理、奈米生醫光電、生醫材料、生醫組織光學…等
+         </p></div>
+      
+         <div>
+         <p class="box">
+         
+            <b>歷任系主任</b><br><br>
+            <br>
+            | 第一任：謝文峰教授(100/08~09)<br>
+            | 第二任：傅永貴院長代理(100/10~101/07)<br>
+            | 第三任：郭宗枋教授(101/08~107/07)<br>
+            | 第四任：李欣縈教授(107/08~110/07)<br>
+            | 第五任：賴韋志教授(110/08~NOW)<br><br>
+            
+            ＊原光電科學與工程研究所歷任所長--<br>
+            | 第一任：傅永貴教授(91/08~98/01)<br>
+            | 第二任：謝文峰教授(98/02~100/07)<br><br>
+   
+            ＊原光電工程學系歷任系主任--<br>
+            | 第一任：洪茂峰教授(96/08~97/07)<br>
+            | 第二任：李清庭教授(97/08~98/01)<br>
+            | 第三任：謝文峰教授兼(98/02~100/07)<br><br>
+            
+         </p></div>
+      </div>
+
+      <label for="Leave">休學比例:</label>
+      <meter id="Leave" value="1" min="0" max="16"></meter><br>
+      
+      <label for="continue">升學比例:</label>
+      <meter id="continue" value="0.9"></meter><br>
+      
+      <!-- 用Figure element做照片 -->
+      <p>
+         <figure>
+            <img src="光電系外觀.jpg" alt="系所外觀" style="width:50%">
+            <figcaption>Fig.1 系所外觀</figcaption>
+         </figure>
+
+         <figure>
+            <img src="光電系大門.jpg" alt="系所大門" style="width:50%">
+            <figcaption>Fig.2 系所大門</figcaption>
+         </figure>
+      </p>
+
+
+
+   <div id="background_bottom">
+   <footer><!-- footer element -->
+      <p align="center">
+         <font color="white">
+         本網站著作權屬於國立成功大學 光電科學與工程學系的傅瀚陞同學<br><!-- marker element -->
+         Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+         電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+         郵件地址：70101台南市東區大學路1號　成大光電系<br>
+         系辦公室：成功校區綜合大樓四樓48402室
+         上班時間：<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+         </font>
+      <br>
+      </p>
+   </footer></div>
+
+   </body>
+</html>

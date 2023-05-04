@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>監獄</title>
+      <!-- mata element -->
+      <meta name = "keywords" content = "web page, photonics, HTML5, Department of Photonics, DPS, 
+      光電系, 成大光電系, 成大光電科學與工程學系, National Cheng Kung University, NCKU ">
+      <meta name = "description" content = "此為光電系學生傅瀚陞為成大光電系所寫簡陋網站">
+
+
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 14pt;
+                        color: green;}
+         .top_href:hover{ color: red; }
+         .top_right_href:hover{  color: red; }
+         .right_href:hover{  color: red; }
+
+         p     {font-weight:bolder}
+         span { font-family:"標楷體";
+                font-weight:bold}
+         #dotted { text-align: center;
+                   width: 50%;
+                   position: relative; 
+                   left: 25%;
+                   border-width: 6px;
+                   border-style: dotted;
+                   border-color: red; }
+
+         #wall{position: absolute;
+               top: 400px;
+               left: 17.7em;
+               z-index: 0}
+         #jail{position: absolute;
+               top: 420px;
+               left: 17.7em;
+               z-index: 2}
+         
+         #no1{position: absolute;
+         top: 38em;
+         left: 28em;
+         z-index: 1}
+         #no2{position: absolute;
+         top: 38em;
+         left: 40em;
+         z-index: 1}
+         #no3{position: absolute;
+         top: 37em;
+         left: 52em;
+         z-index: 1}
+         body  { background-image: url(./傅瀚陞.png);
+                 background-position: bottom right;
+                 background-repeat: no-repeat;
+                 background-attachment: fixed;
+                 background-size: 6%;
+                 }
+      </style>
+   </head>
+
+   <body><div id="background_main">
+      
+      <!-- 系網首頁連結圖 -->
+      <div>
+      <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+         alt = "系網首頁圖片"> </a>
+      </div>
+
+      <!-- 各項連結 -->
+      <div id="top_right">
+         <p>
+            <nav  align="right"><!-- nav element -->
+            |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+            |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+            |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+            |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+         </nav>
+         </p>
+      </div>
+
+      <!-- 監獄 -->
+      
+      <div id="dotted">
+      <ul>
+         <p id="list1">以下為光電黑名單，看到請注意!!!</p>
+         <span>1號：簡偉廷</span><br>
+         <span>2號：郭羿萱</span><br>
+         <span>3號：劉語慈</span><br>
+      </ul>
+      </div>
+   
+      <div id="picture">
+         <img id="wall" src="./監獄背景.png" alt="監獄背景圖" width="60%" height="100%">
+         <img id="jail" src="./監獄.png" alt="監獄圖" width="60%" height="95%">
+         <img id="no1" src="./簡瑋廷.jpg" alt="簡偉廷" width="10%">
+         <img id="no2" src="./郭羿萱.jpg" alt="郭羿萱" width="10%">
+         <img id="no3" src="./劉語慈.jpg" alt="劉語慈" width="10%">
+      </div>
+
+   </div>
+
+   <!-- <div id="background_bottom">
+   <footer>
+      <p align="center">
+         <font color="white">
+         本網站著作權屬於國立成功大學 光電科學與工程學系的<mark><b>傅瀚陞同學</b></mark><br>
+         Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+         電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+         郵件地址：70101台南市東區大學路1號　成大光電系<br>
+         系辦公室：成功校區綜合大樓四樓48402室
+         上班時間：<time>9:00</time>~<time>17:00</time><br>
+         </font>
+      <br>
+      </p>
+   </footer></div> -->
+
+
+   </body>
+</html>

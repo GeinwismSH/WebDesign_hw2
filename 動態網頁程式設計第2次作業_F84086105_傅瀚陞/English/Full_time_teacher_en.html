@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Full time teacher</title>
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+         /* media type */
+         @media all{ 
+            a        {  text-decoration:none;}
+            .top_href   {  font-weight: bolder;
+                           font-size: 20pt;}
+            .top_right_href   {font-size: 12pt;
+                              color: purple;}
+            .right_href {font-size: 12pt;
+                           color: green;}
+            .top_href:hover{ color: white; 
+                              background-color: RoyalBlue; }
+            
+            .top_right_href:hover{  color: white; }
+            .right_href:hover{  color: white; }
+            #comment {width: 50%;
+                     float: right;
+                     text-align: right;
+                     padding: .2em;
+                     margin-right: .5em;
+                     margin-bottom: .5em;}
+            .rhspan  {padding: 2%;
+                     border: 0.15em solid rgb(5, 104, 5);}
+            #background_main{   background-image:url(../背景圖.jpg) ;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+            #background_bottom{   background-color: #6b0707;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+         }
+         </style>
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main_en.html"><img src = "./DPS_En_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main_en.html">Home</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">NCKU</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap_en.html">Site map</a>&emsp;
+               |&emsp;<a class="top_right_href" href="../main.html">中文</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main_en.html">News</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce_en.html">Introduction</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers_en.html">Faculty</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class_en.html">Curriculum</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+   
+         <hr>
+
+   
+      <!-- 教授列表 -->
+
+      <table align="center" border = "1">
+         <thead><!-- thead element -->
+            <tr>
+               <th>Professor Photo</th><!-- th element -->
+               <th>Relevant Information</th>
+            </tr>
+         </thead>
+
+         <tbody>
+         <tr>
+         <td><img src = "../賴韋志.jpg" width = "130" height = "160"
+            alt = "賴韋志教授圖片"></td>
+         <td>Lai, Wei-Chih
+            <ul>
+               <li>Tel：63931</li>
+               <li>Office：Room 48413, 4th Floor, Complex Building</li>
+               <li>E-mail：weilai@ncku.edu.tw</li>
+               <li>Lab：Solid State Lighting Lab (ext.63906#1062,2071)</li>
+               <li>Expertise：High-efficiency blue light-emitting diode process technology</li>
+               <li>Nickname: Master of Electronics</li>
+            </ul>
+
+         </td>
+
+         </tr>
+
+         <tr>
+            <td><img src = "../郭宗枋.jpg" width = "130" height = "160"
+               alt = "郭宗枋教授圖片"></td>
+            <td>Guo, Tzung-Fang
+               <ul>
+                  <li>Tel：63914</li>
+                  <li>Office：Room 48403, 4th Floor, Complex Building</li>
+                  <li>E-mail：guotf@ncku.edu.tw</li>
+                  <li>Lab：Organic electroluminescence element (ext.63906#2021、63911#101)</li>
+                  <li>Expertise: Conjugated Organic Polymer Electroluminescence Components</li>
+                  <li>Nicknames: TF Guo, Lao-Guo, Semiconductor Master</li>
+               </ul>
+   
+            </td>
+         </tr>
+
+         <tr>
+            <td><img src = "../周維揚.jpg" width = "130" height = "160"
+               alt = "周維揚教授圖片"></td>
+            <td>Chou, Wei-Yang
+               <ul>
+                  <li>Tel：63912</li>
+                  <li>Office：Room 48415, 4th Floor, Complex Building</li>
+                  <li>E-mail：weiyang@ncku.edu.tw</li>
+                  <li>Lab: Organic Optoelectronic Components Laboratory (ext.63906#1081,1051)</li>
+                  <li>Expertise: Organic Thin Film Transistor</li>
+                  <li>Nicknames: Froggy, Lao-Zhou, Wei-Yang without Mercy</li>
+               </ul>
+   
+            </td>
+         </tr>
+
+         <tr>
+            <td><img src = "../張世慧.jpg" width = "130" height = "160"
+               alt = "張世慧教授圖片"></td>
+            <td>Chang, Shih-Hui
+               <ul>
+                  <li>Tel：63920</li>
+                  <li>Office：Room 48411, 4th Floor, Complex Building</li>
+                  <li>E-mail：gilbert@ncku.edu.tw</li>
+                  <li>Lab：Virtual photoelectric (ext.63911#206,209、63906#2131)</li>
+                  <li>Expertise：Finite-difference time-domain method for optoelectronic simulation</li>
+                  <li>Nick name：Living Buddha, Grand Shih-Hui know everything</li>
+                  <li>Apprentice：TianTianJian</li>
+               </ul>
+   
+            </td>
+         </tr>
+         </tbody>
+
+         <tfoot>
+            <tr>
+               <td><aside align="center">All are real photo</aside></td><!-- aside element -->
+               <td><aside align="center">The professor's information is slightly fabricated</aside></td>
+            </tr>
+         </tfoot>
+      </table>
+
+
+      <br>
+      <div id="background_bottom">
+      <footer> 
+         <br>
+         <p align="center">
+            <font color="white">
+               Copyright @2023 Han_Sheng Fu Dept. of Photonics, NCKU. all rights reserved.<br>
+               Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+               Tel：+886-6-2757575 ext.　Fax：+886-6-2095040<br>
+               Build. Location：Complex building in Cheng-Kung Campus<br>
+               Mail Add.：Dept. of Photonics, Ncku<br>
+   　　　　　   No.1, University Road, Tainan City 701, Taiwan (R.O.C)
+               Working hours:<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+            </font>
+            <br>
+            </p>
+         </footer>
+      </div>
+
+   </body>
+</html>

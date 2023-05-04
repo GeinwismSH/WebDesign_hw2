@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Jail</title>
+      <!-- mata element -->
+      <meta name = "keywords" content = "web page, photonics, HTML5, Department of Photonics, DPS, 
+      光電系, 成大光電系, 成大光電科學與工程學系, National Cheng Kung University, NCKU ">
+      <meta name = "description" content = "此為光電系學生傅瀚陞為成大光電系所寫簡陋網站">
+
+
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 14pt;
+                        color: green;}
+         .top_href:hover{ color: red; }
+         .top_right_href:hover{  color: red; }
+         .right_href:hover{  color: red; }
+
+         p     {font-weight:bolder}
+         span { font-family:"times new roman";
+                font-weight:bold}
+         #dotted { text-align: center;
+                   width: 60%;
+                   position: relative; 
+                   left: 20%;
+                   border-width: 6px;
+                   border-style: dotted;
+                   border-color: red; }
+
+         #wall{position: absolute;
+               top: 400px;
+               left: 17.7em;
+               z-index: 0}
+         #jail{position: absolute;
+               top: 420px;
+               left: 17.7em;
+               z-index: 2}
+         
+         #no1{position: absolute;
+         top: 38em;
+         left: 28em;
+         z-index: 1}
+         #no2{position: absolute;
+         top: 38em;
+         left: 40em;
+         z-index: 1}
+         #no3{position: absolute;
+         top: 37em;
+         left: 52em;
+         z-index: 1}
+         body  { background-image: url(../傅瀚陞_en.png);
+                 background-position: bottom right;
+                 background-repeat: no-repeat;
+                 background-attachment: fixed;
+                 background-size: 6%;
+                 }
+      </style>
+   </head>
+
+   <body><div id="background_main">
+      
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main_en.html"><img src = "./DPS_En_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main_en.html">Home</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">NCKU</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap_en.html">Site map</a>&emsp;
+               |&emsp;<a class="top_right_href" href="../main.html">中文</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+
+
+      <!-- 監獄 -->
+      
+      <div id="dotted">
+      <ul>
+         <p id="list1">The following is the blacklist of the Department of Photonics, please pay attention when you see them!!!</p>
+         <span>No. 1: Jian Weiting</span><br>
+         <span>No. 2: Guo Yixuan</span><br>
+         <span>No. 3: Liu Yuci</span><br>
+      </ul>
+      </div>
+   
+      <div id="picture">
+         <img id="wall" src="../監獄背景.png" alt="監獄背景圖" width="60%" height="100%">
+         <img id="jail" src="../監獄.png" alt="監獄圖" width="60%" height="95%">
+         <img id="no1" src="../簡瑋廷.jpg" alt="簡偉廷" width="10%">
+         <img id="no2" src="../郭羿萱.jpg" alt="郭羿萱" width="10%">
+         <img id="no3" src="../劉語慈.jpg" alt="劉語慈" width="10%">
+      </div>
+
+   </div>
+
+
+
+   </body>
+</html>

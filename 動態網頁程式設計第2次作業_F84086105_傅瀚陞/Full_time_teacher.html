@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>光電系專任教師</title>
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+         /* media type */
+         @media all{ 
+            a        {  text-decoration:none;}
+            .top_href   {  font-weight: bolder;
+                           font-size: 20pt;}
+            .top_right_href   {font-size: 12pt;
+                              color: purple;}
+            .right_href {font-size: 12pt;
+                           color: green;}
+            .top_href:hover{ color: white; 
+                              background-color: RoyalBlue; }
+            
+            .top_right_href:hover{  color: white; }
+            .right_href:hover{  color: white; }
+            #comment {width: 50%;
+                     float: right;
+                     text-align: right;
+                     padding: .2em;
+                     margin-right: .5em;
+                     margin-bottom: .5em;}
+            .rhspan  {padding: 2%;
+                     border: 0.15em solid rgb(5, 104, 5);}
+            #background_main{   background-image:url(./背景圖.jpg) ;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+            #background_bottom{   background-color: #6b0707;
+                           background-position:100% center;
+                           background-origin:border-box;
+                           background-size:cover;
+                           background-repeat:no-repeat;}
+         .pic
+         {
+            -webkit-transition: -webkit-transform 4s; 
+            -moz-transition: -moz-transform 4s; 
+            -o-transition: -o-transform 4s; 
+            transition: transform 2s, opacity 2s; 
+;
+         }
+         .pic:hover
+         {
+            -webkit-transform: rotate(360deg) scale(2, 2); 
+            -moz-transform: rotate(360deg) scale(2, 2);
+            -o-transform: rotate(360deg) scale(2, 2); 
+            transform: rotate(360deg) scale(2, 2);
+         }         
+         }
+         </style>
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main.html"><img src = "./DPS_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+   
+         
+   
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main.html">首頁</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">成大首頁</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap.html">網站地圖</a>&emsp;
+               |&emsp;<a class="top_right_href" href="./English/main_en.html">English</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main.html">各項公告</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce.html">系所簡介</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers.html">系所成員</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class.html">課程資訊</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+   
+         <hr>
+
+
+
+      <!-- 教授列表 -->
+
+      <table align="center" border = "1">
+         <thead><!-- thead element -->
+            <tr>
+               <th>教授照片</th><!-- th element -->
+               <th>相關資訊</th>
+            </tr>
+         </thead>
+
+         <tbody><!-- tbody element -->
+            <tr>
+               <td><img class="pic" src = "./賴韋志.jpg" width = "130" height = "160"
+               alt = "賴韋志教授圖片"></td>
+               <td>賴韋志 (教授兼系主任) Lai, Wei-Chih
+                  <ul>
+                     <li>分機：63931</li>
+                     <li>辦公室：綜合大樓四樓48413室</li>
+                     <li>E-mail：weilai@ncku.edu.tw</li>
+                     <li>實驗室：固態照明實驗室 (ext.63906#1062,2071)</li>
+                     <li>專長領域：高效率藍光發光二極體製程技術</li>
+                     <li>暱稱：電子學大師</li>
+                  </ul>
+               </td>
+            </tr>
+         
+
+            <tr>
+               <td><img class="pic" src = "./郭宗枋.jpg" width = "130" height = "160"
+                  alt = "郭宗枋教授圖片"></td>
+               <td>郭宗枋 (特聘教授) Guo, Tzung-Fang
+                  <ul>
+                     <li>分機：63914</li>
+                     <li>辦公室：綜合大樓四樓48403室</li>
+                     <li>E-mail：guotf@ncku.edu.tw</li>
+                     <li>實驗室：有機電激發光元件 (ext.63906#2021、63911#101)</li>
+                     <li>專長領域：共軛有機高分子電激發光元件</li>
+                     <li>暱稱：TF郭、老郭、半導體大師</li>
+                  </ul>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img class="pic" src = "./周維揚.jpg" width = "130" height = "160"
+                  alt = "周維揚教授圖片"></td>
+               <td>周維揚 (特聘教授) Chou, Wei-Yang
+                  <ul>
+                     <li>分機：63912</li>
+                     <li>辦公室：綜合大樓四樓48415室</li>
+                     <li>E-mail：weiyang@ncku.edu.tw</li>
+                     <li>實驗室：有機光電元件實驗室 (ext.63906#1081,1051)</li>
+                     <li>專長領域：有機薄膜電晶體</li>
+                     <li>暱稱：揪吉、老周、微陽、無慈悲的維揚</li>
+                  </ul>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img class="pic" src = "./張世慧.jpg" width = "130" height = "160"
+                  alt = "張世慧教授圖片"></td>
+               <td>張世慧 (教授) Chang, Shih-Hui
+                  <ul>
+                     <li>分機：63920</li>
+                     <li>辦公室：綜合大樓四樓48411室</li>
+                     <li>E-mail：gilbert@ncku.edu.tw</li>
+                     <li>實驗室：虛擬光電 (ext.63911#206,209、63906#2131)</li>
+                     <li>專長領域：有限差分時域法光電模擬</li>
+                     <li>暱稱：活佛、大世慧什麼都會</li>
+                     <li>愛徒：簡偉廷</li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+               <td><aside align="center">照片為本人</aside></td><!-- aside element -->
+               <td><aside align="center">教授資訊有些許杜撰</aside></td>
+            </tr>
+         </tfoot>
+      </table>
+
+      
+
+      <div id="background_bottom">
+         <footer><!-- footer element -->
+            <p align="center">
+               <font color="white">
+               本網站著作權屬於國立成功大學 光電科學與工程學系的傅瀚陞同學<br><!-- marker element -->
+               Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+               電話：(06)2757575 轉各成員分機　傳真：(06)2095040<br>
+               郵件地址：70101台南市東區大學路1號　成大光電系<br>
+               系辦公室：成功校區綜合大樓四樓48402室
+               上班時間：<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+               </font>
+            <br>
+            </p>
+         </footer></div>
+
+   </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<!--
+F84086105 傅瀚陞 第2次作業 4/13
+F84086105 HanShengFu The Second Homework 4/13
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Department of Photonics Introduction</title>
+      <!-- Embedded CSS -->
+      <style type = "text/css">	  
+
+         a        {  text-decoration:none;}
+         .top_href   {  font-weight: bolder;
+                        font-size: 20pt;}
+         .top_right_href   {font-size: 12pt;
+                           color: purple;}
+         .right_href {font-size: 14pt;
+                        color: green;}
+         .top_href:hover{ color: red; }
+         .top_right_href:hover{  color: red; }
+         .right_href:hover{  color: red; }
+         #background_main{   background-image:url(../背景圖.jpg) ;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         #background_bottom{   background-color: #6b0707;
+                        background-position:100% center;
+                        background-origin:border-box;
+                        background-size:cover;
+                        background-repeat:no-repeat;}
+         h1{            border: 3px solid rgba(44, 6, 94, 0.877);
+                        padding: 5px 20px; 
+                        background: rgba(174, 248, 248, 0.979);
+                        width: 200px;
+                        text-align: center;
+                        border-radius: 15px; 
+                        margin-bottom: 20px;
+                        box-shadow: 10px 10px 10px dimgray;}
+         .flexbox 
+         {
+            width: 900px;
+            height: 900px;
+            display: -webkit-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+         }
+         /* flexbox */
+         .flexbox > div 
+         {
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 200px;
+            margin: 10px -10px 10px 0px;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+         }
+         .flexbox > div:nth-child(1){ background-color: rgb(216, 215, 215); }
+         .flexbox > div:nth-child(2){ background-color: rgb(216, 215, 215); }
+         .flexbox > div:nth-child(3){ background-color: rgb(216, 215, 215); }
+         .flexbox > div:nth-child(4){ background-color: rgb(216, 215, 215); }
+
+
+         .flexbox > div:hover { 
+            width: 300px; color: white; font-weight: bold; }
+         .flexbox > div:nth-child(1):hover { background-color: rgb(5, 199, 47); }
+         .flexbox > div:nth-child(2):hover { background-color: crimson; }
+         .flexbox > div:nth-child(3):hover { background-color: rgb(219, 8, 166); }
+         .flexbox > div:nth-child(4):hover { background-color: rgb(85, 2, 240); }
+
+         .box {  height:800px ;overflow: hidden; font-family: "Rosario" }
+      </style>    
+   </head>
+
+   <body>
+      <!-- 系網首頁連結圖 -->
+      <div id="background_main">
+         <div>
+         <a id="Top" href="./main_en.html"><img src = "./DPS_En_image.jpg" width = "100%" height = "100%"
+            alt = "系網首頁圖片"> </a>
+         </div>
+   
+         <!-- 各項連結 -->
+   
+         
+   
+         <div id="top_right">
+            <p>
+               <nav  align="right"><!-- nav element -->
+               |&emsp;<a class="top_right_href" href="./main_en.html">Home</a>&emsp;
+               |&emsp;<a class="top_right_href" href="https://web.ncku.edu.tw/">NCKU</a>&emsp;<!-- 連到外部，但不算在24個網頁中！ -->
+               |&emsp;<a class="top_right_href" href="./sitemap_en.html">Site map</a>&emsp;
+               |&emsp;<a class="top_right_href" href="../main.html">中文</a>&emsp;|
+            </nav>
+            </p>
+         </div>
+   
+         <!-- 目錄 -->
+         <div id="top">
+            <table align="center" border = "1">
+               <tr>
+               <td>&emsp;&emsp;<a class="top_href" href="./main_en.html">News</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./DPS_introduce_en.html">Introduction</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./teachers_en.html">Faculty</a>&emsp;&emsp;</td>
+               <td>&emsp;&emsp;<a class="top_href" href="./class_en.html">Curriculum</a>&emsp;&emsp;</td>
+               </tr>
+            </table>
+            <br>
+         </div>
+   
+         
+   
+
+      <!-- 系所介紹內容 -->
+      <div>
+         <header><!-- header element -->
+            <h1>Department Profile</h1>
+         </header>
+
+         <div class = "flexbox">
+            <div><p class="box">
+         <b>History of Department</b><br><br>
+       
+            Optoel<wbr>ectronics technology is a forward-looking cutting-edge cross-field integrated technology. Only with solid scientific and technological literacy can we have unlimited innovative research and development capabilities and unlimited creative development space.
+            At a time when the industry is in urgent need of optoelectronic talents, it is imperative to cultivate a solid optoelectronic technology foundation for the development of related optoelectronic industries.
+            Under the circumstances that my country has a leading position in the field of optoelectronics in the world, and when the southern science park is planned to be an important center for optoelectronic research and development, the domestic academic research and development and industry in the optoelectronic field are booming.  In response to the large demand for excellent optoelectronic talents.
+            In August 1991, the Faculty of Science established the "Institute of Photonics Science and Engineering" master class, and in August 1993 established the doctoral class, and in August 1996, the School of Electrical Engineering and Information Technology established the "Department of Optoelectronic Engineering" to recruit undergraduate students  .  For the sake of academic consistency, in the 100th academic year, the departments were merged into the "Department of Optoelectronics Science and Engineering" to jointly shoulder the cultivation of optoelectronic talents.
+         </p>
+            </div>
+
+         <div><p class="box">
+         <b>Department goals</b><br><br>
+         
+         The overall goal of the department is to cultivate talents in optoelectronics, focusing on basic and integrated education, so that graduates have a good academic and technical background to engage in forward-looking academic research and industrial technology research and development, and also have the ability to cooperate with electronics, information technology  and the development of the communications industry.  The specific teaching and research focus will focus on basic optoelectronics and forward-looking optoelectronic technology courses, such as: nano optics, solar optoelectronics, optical design, optoelectronic signal processing, optoelectronic materials, component modules, systems and optical information storage, optoelectronic communication and  Flat panel display and other related applications.  Its biggest feature is the integration of upstream, midstream and downstream, taking into account both industrial application and academic foresight.  Since Cheng Kung University has established quite outstanding research in optical design, photoelectric signal processing, laser and photoelectric basic research, photoelectric materials and components, broadband optical fiber communication systems, optical storage and flat-panel display technology, and micro-opto-electromechanical information systems.  Therefore, in the future, under the mutual integration of the relevant institutions of successful universities, the Department will have the unique advantage of achieving the goal of excellence and reach a world-class level.<br>
+         <br>
+         </p></div>
+         
+         <div><p class="box">
+         <b>Development plan</b><br><br>
+         
+         Research and development focuses on the following:<br>
+         1. Optoelectronics science: laser principles and applications, numerical methods, material optics, waveguide optics, optoelectronic numerical simulation, optical system design, solar photoelectrochemistry, etc.<br>
+         2. Information and Display Optoelectronics: Circuits, Display Optics, Display Chromatology, Liquid Crystal Optoelectronics and Applications, Fourier Optics, Signals and Systems, Optical Fiber Communication, etc.<br>
+         3. Nano and green energy optoelectronics: material science, semiconductor component manufacturing technology, photoelectric measurement technology, optoelectronic material physics, solid state physics, organic optoelectronic materials and components, etc.<br>
+         4. Biomedical optoelectronics: biomedical photoconductivity, microscopy, principles of biomedical spectroscopy, nanometer biomedical optoelectronics, biomedical materials, biomedical tissue optics, etc.<br><br>
+        </p></div>
+      
+
+      <div><p class="box">
+         <b>Successive Department Heads:</b><br><br>
+
+         | First term: Professor Xie Wenfeng (100/08~09)<br>
+         | Second term: Dean Fu Yonggui Acting (100/10~101/07)<br>
+         | Third term: Professor Guo Zongfang (101/08~107/07)<br>
+         | Fourth term: Professor Li Xinying (107/08~110/07)<br>
+         | Fifth term: Professor Lai Weizhi (110/08~NOW)<br><br>
+         
+         ＊Director of the former Institute of Photonics Science and Engineering--<br>
+         | First term: Professor Fu Yonggui (91/08~98/01)<br>
+         | Second term: Professor Xie Wenfeng (98/02~100/07)<br><br>
+
+         ＊Former Dean of the Department of Photonics Science and Engineering--<br>
+         | First term: Professor Hong Maofeng (96/08~97/07)<br>
+         | Second term: Professor Li Qingting (97/08~98/01)<br>
+         | Third term: Professor Xie Wenfeng concurrently (98/02~100/07)
+         
+         </p></div>
+      </div>
+
+      <label for="Leave">Dropout rate:</label>
+      <meter id="Leave" value="1" min="0" max="16"></meter><br>
+      
+      <label for="continue">Progression rate:</label>
+      <meter id="continue" value="0.9"></meter><br>
+      <!-- 用Figure element做照片 -->
+      <p>
+         <figure>
+            <img src="../光電系外觀.jpg" alt="系所外觀" style="width:50%">
+            <figcaption>Fig.1 Appearance of the department</figcaption>
+         </figure>
+
+         <figure>
+            <img src="../光電系大門.jpg" alt="系所大門" style="width:50%">
+            <figcaption>Fig.2 Department entrance/gate</figcaption>
+         </figure>
+      </p>
+
+      <br>
+      <div id="background_bottom">
+         <footer> 
+            <br>
+            <p align="center">
+               <font color="white">
+                  Copyright @2023 Han_Sheng Fu Dept. of Photonics, NCKU. all rights reserved.<br>
+                  Email:<a href="mailto:ades96004@gmail.com">ades96004@gmail.com</a><br>
+                  Tel：+886-6-2757575 ext.　Fax：+886-6-2095040<br>
+                  Build. Location：Complex building in Cheng-Kung Campus<br>
+                  Mail Add.：Dept. of Photonics, Ncku<br>
+      　　　　　   No.1, University Road, Tainan City 701, Taiwan (R.O.C)
+                  Working hours:<time>9:00</time>~<time>17:00</time><br><!-- time element -->
+               </font>
+               <br>
+               </p>
+            </footer>
+         </div>
+
+   </body>
+</html>
